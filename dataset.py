@@ -55,3 +55,5 @@ class VorAusDataset:
         y_test = self.dataframe[~clean_record].anomaly.to_numpy()
 
         return X_train, y_train, X_test, y_test
+    def get_columns(self) -> list[str]:
+        return list(self.dataframe.drop('anomaly',axis=1).columns.values)
