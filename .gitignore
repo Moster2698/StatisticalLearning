@@ -1,3 +1,4 @@
 .DS_Store
 dataset.parquet
 figures
+__pycache__/
